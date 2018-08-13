@@ -1,0 +1,2 @@
+class AnimeBlog < ApplicationRecord
+end

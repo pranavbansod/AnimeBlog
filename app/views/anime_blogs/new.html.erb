@@ -1,0 +1,19 @@
+<h1>New Blog</h1>
+
+<%= form_with scope: :anime_blog, url: anime_blogs_path, local: true do |form| %>
+  <p>
+    <%= form.label :anime_name %><br>
+    <%= form.text_field :anime_name %>
+  </p>
+
+  <p>
+    <%= form.label :desc %><br>
+    <%= form.text_area :desc %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Home', root_path %>
