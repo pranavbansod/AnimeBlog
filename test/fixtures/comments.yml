@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  commented_by: MyString
+  comment_text: MyText
+  anime_blog: one
+
+two:
+  commented_by: MyString
+  comment_text: MyText
+  anime_blog: two
