@@ -11,4 +11,19 @@
   <%= @blog.desc %>
 </p>
 
+<h2>Add a comment:</h2>
+<%= form_with(model: [ @blog, @blog.comments.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :commented_by %><br>
+    <%= form.text_field :commented_by %>
+  </p>
+  <p>
+    <%= form.label :comment_text %><br>
+    <%= form.text_area :comment_text %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
 <%= link_to 'Home', root_path %>
