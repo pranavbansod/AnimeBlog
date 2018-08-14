@@ -1,5 +1,6 @@
 <h2>Your Blog</h2>
 
+<%= link_to 'Delete', anime_blog_path(@blog.id), method: :delete, data: { confirm: 'Are you sure?' } %>
 <p>
   <strong>Name:</strong>
   <%= @blog.anime_name %>

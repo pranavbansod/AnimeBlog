@@ -17,6 +17,13 @@ class AnimeBlogsController < ApplicationController
     @blog = AnimeBlog.find(params[:id])
   end
 
+  def destroy
+    @blog = AnimeBlog.find(params[:id])
+    @blog.destroy
+
+    redirect_to anime_blogs_path
+  end
+
   private
   def anime_blog_params
     params.require(:anime_blog).permit(:anime_name, :desc)
