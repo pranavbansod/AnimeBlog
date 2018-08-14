@@ -11,6 +11,19 @@
   <%= @blog.desc %>
 </p>
 
+<h2>Comments</h2>
+<% @blog.comments.each do |comment| %>
+  <p>
+    <strong>Comment By:</strong>
+    <%= comment.commented_by %>
+  </p>
+
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.comment_text %>
+  </p>
+<% end %>
+
 <h2>Add a comment:</h2>
 <%= form_with(model: [ @blog, @blog.comments.build ], local: true) do |form| %>
   <p>
