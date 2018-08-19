@@ -22,6 +22,7 @@
     <strong>Comment:</strong>
     <%= comment.comment_text %>
   </p>
+  <%= link_to 'delete',anime_blog_comment_path(@blog,comment), method: :delete, data: {confirm:'Are You Sure ?'} %>
 <% end %>
 
 <h2>Add a comment:</h2>
