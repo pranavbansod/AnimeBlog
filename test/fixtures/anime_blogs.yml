@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  blog_by: MyString
-  anime_name: MyString
-  desc: MyText
+  blog_by: Pranav
+  anime_name: Attack On Titan
+  desc: Shingeki no Kyojin
 
 two:
-  blog_by: MyString
-  anime_name: MyString
-  desc: MyText
+  blog_by: Kaneki
+  anime_name: Tokyo Ghoul
+  desc: What's 1000 - 7 ?
