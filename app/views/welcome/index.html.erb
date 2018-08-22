@@ -1,4 +1,5 @@
-<h1>Hey there <%= @var %></h1>
-
-<%= link_to 'Create New Blog', new_anime_blog_path %>
-<%= link_to 'View All', anime_blogs_path %>
+<%= link_to 'Jap' ,controller:'welcome', action: 'japanese' %>
+<%= link_to 'Eng' ,controller:'welcome', action: 'english' %>
+<h1><%= @hello %> <%= @var %></h1>
+<%= link_to @create, new_anime_blog_path %> &nbsp; &nbsp;
+<%= link_to @view, anime_blogs_path %>
