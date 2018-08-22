@@ -26,6 +26,6 @@ class AnimeBlogsController < ApplicationController
 
   private
   def anime_blog_params
-    params.require(:anime_blog).permit(:anime_name, :desc)
+    params.require(:anime_blog).permit(:blog_by,:anime_name, :desc)
   end
 end

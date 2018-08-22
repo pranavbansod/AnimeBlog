@@ -2,7 +2,9 @@
 
 <%= link_to 'Delete', anime_blog_path(@blog.id), method: :delete, data: { confirm: 'Are you sure?' } %>
 <p>
-  <strong>Name:</strong>
+  <strong>Blog by:</strong>
+  <%= @blog.blog_by %>
+  <strong>Topic:</strong>
   <%= @blog.anime_name %>
 </p>
 
