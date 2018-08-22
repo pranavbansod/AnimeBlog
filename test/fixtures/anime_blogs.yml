@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  blog_by: MyString
   anime_name: MyString
   desc: MyText
 
 two:
+  blog_by: MyString
   anime_name: MyString
   desc: MyText
