@@ -18,7 +18,7 @@ class CommentTest < ActiveSupport::TestCase
   end
 
   test "should have reference to anime_blog" do
-    blog = AnimeBlog.new({"blog_by"=>"Patel","anime_name"=>"A", "desc"=>"B"})
+    blog = AnimeBlog.new({"anime_name"=>"A", "desc"=>"B"})
     blog.save
     comment = blog.comments.create({"commented_by"=>"XYZ","comment_text"=>"abcdefghijklmnopqrstuvwxyz"})
     assert_equal(comment.anime_blog_id,blog.id)

@@ -2,17 +2,12 @@ require 'test_helper'
 
 class AnimeBlogTest < ActiveSupport::TestCase
   test "should not save blog without anime_name" do
-    blog = AnimeBlog.new({"blog_by"=>"Pranav"})
+    blog = AnimeBlog.new
     assert_not blog.save, "Saved the blog without a anime_name"
   end
 
-  test "should not save blog without blog_by" do
-    blog = AnimeBlog.new({"anime_name"=>"TG"})
-    assert_not blog.save, "Saved the blog without a blog_by"
-  end
-
   test "should save blog with params" do
-    blog = AnimeBlog.new({"anime_name"=>"Shingeki No Kyojin","blog_by"=>"Pranav"})
+    blog = AnimeBlog.new({"anime_name"=>"Shingeki No Kyojin"})
     assert blog.save
   end
 
