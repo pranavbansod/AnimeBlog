@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-
-  get 'welcome/japanese'
-  get 'welcome/english'
   get 'welcome/index'
 
   resources :anime_blogs do

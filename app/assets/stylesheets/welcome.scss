@@ -1,3 +1,81 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$titlePadding: 15px;
+$titleColor: #fff;
+$titleBackgroundColor: #3e2d7d;
+
+body {
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  font-size: 20px;
+  font-family: Roboto,sans-serif;
+  background: #e5eff2;
+}
+
+.intro {
+  background-color: $titleBackgroundColor;
+  text-align: center;
+  color: $titleColor;
+  width: 100%;
+}
+
+.topPanel {
+  height: 60px;
+  margin-bottom: 0px;
+}
+
+.topPanel h1 {
+  padding-top: $titlePadding;
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+.homeIntro {
+  min-height: 100px;
+  margin-bottom: 0px;
+}
+
+.homeIntro h2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: $titlePadding;
+}
+
+.homeIntro p{
+  margin: 0 auto;
+  width: 70%;
+  padding-bottom: 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #bdb0ef;
+}
+
+p a {
+  color: #8d81bb;
+  font-weight: 700;
+}
+
+.blog{
+  width: 100%;
+  position:absolute;
+  height:40px;
+  padding-top: 20px;
+}
+
+.blog .create {
+  float: left;
+  padding-left: 50px;
+
+}
+
+.blog .view {
+  float: right;
+  padding-right: 50px;
+}
+
+.image {
+  padding-top: 60px;
+  text-align: center;
+}
