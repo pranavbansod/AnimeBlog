@@ -49,3 +49,7 @@ body {
     color: #fff;
     text-decoration: none;
 }
+
+.topPanel h1:hover{
+    color: #D8CEF6;
+}
