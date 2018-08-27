@@ -1,3 +1,4 @@
+<%= render 'welcome/heading' %>
 <h1>New Blog</h1>
 
 <%= form_with scope: :anime_blog, url: anime_blogs_path, local: true do |form| %>
@@ -12,8 +13,6 @@
   </p>
 
   <p>
-    <%= form.submit :id => "create_blog"%>
+    <%= form.submit :id => "create_blog" %>
   </p>
 <% end %>
-
-<%= link_to 'Home', root_path %>

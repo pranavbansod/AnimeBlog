@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    font-size: 20px;
+    font-family: Roboto,sans-serif;
+    background: #e5eff2;
+}
+
+.intro {
+    background-color: #3e2d7d;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.topPanel {
+    height: 60px;
+    margin-bottom: 0px;
+}
+
+.topPanel h1 {
+    padding-top: 15px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+.intro .topPanel .titleHomeLink:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.intro .topPanel .titleHomeLink:visited {
+    color: #fff;
+    text-decoration: none;
+}

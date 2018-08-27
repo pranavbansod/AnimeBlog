@@ -1,9 +1,6 @@
-<h1>Listing all blogs</h1>
-<%= link_to 'Home', root_path %>
-
+<%= render 'welcome/heading' %>
 <hr>
 <hr>
-
 <% @blogs.each do |blog| %>
   <%= link_to 'Show', anime_blog_path(blog.id) %>
   <%= link_to 'Delete', anime_blog_path(blog.id), method: :delete, data: { confirm: 'Are you sure?' } %> <br>

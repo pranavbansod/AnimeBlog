@@ -6,32 +6,6 @@ $titlePadding: 15px;
 $titleColor: #fff;
 $titleBackgroundColor: #3e2d7d;
 
-body {
-  margin: 0px 0px 0px 0px;
-  padding: 0;
-  font-size: 20px;
-  font-family: Roboto,sans-serif;
-  background: #e5eff2;
-}
-
-.intro {
-  background-color: $titleBackgroundColor;
-  text-align: center;
-  color: $titleColor;
-  width: 100%;
-}
-
-.topPanel {
-  height: 60px;
-  margin-bottom: 0px;
-}
-
-.topPanel h1 {
-  padding-top: $titlePadding;
-  margin-top: 0px;
-  padding-bottom: 0px;
-}
-
 .homeIntro {
   min-height: 100px;
   margin-bottom: 0px;
@@ -57,20 +31,20 @@ p a {
   font-weight: 700;
 }
 
-.blog{
+.links{
   width: 100%;
   position:absolute;
   height:40px;
   padding-top: 20px;
 }
 
-.blog .create {
+.links .create {
   float: left;
   padding-left: 50px;
 
 }
 
-.blog .view {
+.links .view {
   float: right;
   padding-right: 50px;
 }

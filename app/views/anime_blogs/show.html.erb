@@ -1,15 +1,16 @@
-<h2>Your Blog</h2>
+<%= render 'welcome/heading' %>
+<%= link_to 'Delete', anime_blog_path(@blog.id), method: :delete, data: {confirm: 'Are you sure?'} %>
+<div class="blog">
+  <p>
+    <strong>Topic:</strong>
+    <%= @blog.anime_name %>
+  </p>
 
-<%= link_to 'Delete', anime_blog_path(@blog.id), method: :delete, data: { confirm: 'Are you sure?' } %>
-<p>
-  <strong>Topic:</strong>
-  <%= @blog.anime_name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @blog.desc %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @blog.desc %>
+  </p>
+</div>
 
 <h2>Comments</h2>
 <% @blog.comments.each do |comment| %>
@@ -22,11 +23,11 @@
     <strong>Comment:</strong>
     <%= comment.comment_text %>
   </p>
-  <%= link_to 'delete',anime_blog_comment_path(@blog,comment), method: :delete, data: {confirm:'Are You Sure ?'} %>
+  <%= link_to 'delete', anime_blog_comment_path(@blog, comment), method: :delete, data: {confirm: 'Are You Sure ?'} %>
 <% end %>
 
 <h2>Add a comment:</h2>
-<%= form_with(model: [ @blog, @blog.comments.build ], local: true) do |form| %>
+<%= form_with(model: [@blog, @blog.comments.build], local: true) do |form| %>
   <p>
     <%= form.label :commented_by %><br>
     <%= form.text_field :commented_by %>
@@ -39,5 +40,3 @@
     <%= form.submit %>
   </p>
 <% end %>
-
-<%= link_to 'Home', root_path %>
