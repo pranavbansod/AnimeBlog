@@ -29,6 +29,7 @@ $titleBackgroundColor: #3e2d7d;
 p a {
   color: #8d81bb;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .links{
@@ -41,7 +42,6 @@ p a {
 .links .create {
   float: left;
   padding-left: 50px;
-
 }
 
 .links .view {
@@ -52,4 +52,8 @@ p a {
 .image {
   padding-top: 60px;
   text-align: center;
+}
+
+.link:link,.link:visited{
+  text-decoration:none;
 }
