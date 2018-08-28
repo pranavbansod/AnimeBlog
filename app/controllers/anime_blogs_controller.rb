@@ -4,9 +4,11 @@ class AnimeBlogsController < ApplicationController
 
   def create
     @blog = AnimeBlog.new(anime_blog_params)
-    @blog.save
-
-    redirect_to @blog
+    if @blog.save
+      redirect_to @blog
+    else
+      redirect_to new_anime_blog_path
+    end
   end
 
   def index
