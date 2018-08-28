@@ -3,8 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $titlePadding: 15px;
-$titleColor: #fff;
-$titleBackgroundColor: #3e2d7d;
+$sidePaddingForLinksOnHomePage: 50px;
 
 .homeIntro {
   min-height: 100px;
@@ -41,12 +40,12 @@ p a {
 
 .links .create {
   float: left;
-  padding-left: 50px;
+  padding-left: $sidePaddingForLinksOnHomePage;
 }
 
 .links .view {
   float: right;
-  padding-right: 50px;
+  padding-right: $sidePaddingForLinksOnHomePage;
 }
 
 .image {
