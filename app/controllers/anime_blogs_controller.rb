@@ -2,6 +2,10 @@ class AnimeBlogsController < ApplicationController
   def new
   end
 
+  def edit
+    @blog = AnimeBlog.find(params[:id])
+  end
+
   def create
     @blog = AnimeBlog.new(anime_blog_params)
     if @blog.save
@@ -24,6 +28,16 @@ class AnimeBlogsController < ApplicationController
     @blog.destroy
 
     redirect_to anime_blogs_path
+  end
+
+  def update
+    @blog = AnimeBlog.find(params[:id])
+
+    if @blog.update(anime_blog_params)
+      redirect_to @blog
+    else
+      render 'edit'
+    end
   end
 
   private

@@ -3,6 +3,7 @@
 <hr>
 <% @blogs.each do |blog| %>
   <%= link_to 'Show', anime_blog_path(blog.id) %>
+  <%= link_to 'Edit', edit_anime_blog_path(blog) %>
   <%= link_to 'Delete', anime_blog_path(blog.id), method: :delete, data: { confirm: 'Are you sure?' } %> <br>
   <h3>Anime Name : </h3><%= blog.anime_name %>
   <h3>Description : </h3><%=  blog.desc %><br>
