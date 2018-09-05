@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_23_104826) do
+ActiveRecord::Schema.define(version: 2018_09_05_160644) do
 
   create_table "anime_blogs", force: :cascade do |t|
     t.string "anime_name"
@@ -26,6 +26,14 @@ ActiveRecord::Schema.define(version: 2018_08_23_104826) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["anime_blog_id"], name: "index_comments_on_anime_blog_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "password_hash"
+    t.string "password_salt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

@@ -1,12 +1,17 @@
 <%= render 'heading' %>
-<div class="links">
-  <div class="create">
-    <%= link_to 'Create New Blog', new_anime_blog_path ,:class=>'link'%> &nbsp; &nbsp;
+<div class="row links">
+  <div class="cols">
+    <%= link_to 'Create New Blog', new_anime_blog_path, :class => 'link' %> &nbsp; &nbsp;
   </div>
-  <div class="view">
-    <%= link_to 'View All Blogs', anime_blogs_path ,:class=>'link'%>
+  <% if true %>
+    <div class="col">
+      <%= link_to 'Sign Up', sign_up_path, :class => 'link' %> &nbsp; &nbsp;
+    </div>
+  <% end %>
+  <div class="col">
+    <%= link_to 'View All Blogs', anime_blogs_path, :class => 'link' %>
   </div>
 </div>
 <div class="image">
-  <%= image_tag('home.jpg')%>
+  <%= image_tag('home.jpg') %>
 </div>
